@@ -9,29 +9,50 @@
 <body>
     <div class="sidebar">
         <div class="logo-stripe">
-            <img src="images/odin-lined.png" alt="Odin Logo">
+            <img class="logo" src="images/odin-lined.png" alt="Odin Logo">
             <h1>ODIN</h1>
         </div>
-        <p>Photo by <a href="/">Hailie West</a> on <a href="/">Unsplash</a></p>
+        <p class="credit">Photo by <a href="/">Hailie West</a> on <a href="/">Unsplash</a></p>
     </div>
     <div class="main">
         <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
         <h3>You <em>know</em> you want to.</h3>
         <form action="/" method="post">
-            <div>
+            <div class="raised">
                 <h2>Let's do this!</h2>
-                <label for="fname">First Name</label>
-                <input id="fname" name="fname" type="text">
-                <label for="lname">Last Name</label>
-                <input id="lname" name="lname" type="text">
-                <label for="mail">Email</label>
-                <input type="email" id="mail" name="mail">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="pass">Password</label>
-                <input type="password" id="pass" name="pass">
-                <label for="pass2">Confirm Password</label>
-                <input type="password" id="pass2" name="pass2">
+
+                <div class="row">
+                    <p>
+                        <label for="fname">First Name</label>
+                        <input id="fname" name="fname" type="text">
+                    </p>
+                    <p>
+                        <label for="lname">Last Name</label>
+                        <input id="lname" name="lname" type="text">
+                    </p>
+                </div>
+
+                <div class="row">
+                    <p>
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="mail">
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </p>
+                </div>
+
+                <div class="row">
+                    <p>
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" name="pass">
+                    </p>
+                    <p>
+                        <label for="pass2">Confirm Password</label>
+                        <input type="password" id="pass2" name="pass2">
+                    </p>
+                </div>
             </div>
             <button type="submit">Create Account</button>
         </form>

@@ -20,3 +20,75 @@
 h1 {
     font-family: var(--logo-font);
 }
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background: url(images/background.jpg);
+    background-size:cover;
+    width: 40vw;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+.logo-stripe {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 50px;
+    margin-top: 30vh;
+    height: 150px;
+}
+
+.logo {
+    height: 80%;
+    display: inline;
+}
+
+.credit {
+    margin-top: 47vh;
+}
+
+.credit a {
+    color: white;
+}
+
+.main {
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.main > h3,
+.main > p,
+button {
+    margin: 0px 50px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: olivedrab;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.raised {
+    background: #fff;
+    padding: 30px 50px;
+}
+
+
+
