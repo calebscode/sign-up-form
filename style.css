@@ -24,12 +24,14 @@ h1 {
 body {
     display: flex;
     height: 100vh;
+    background: #eee;
+
 }
 
 .sidebar {
     background: url(images/background.jpg);
     background-size:cover;
-    width: 40vw;
+    width: 50vw;
     color: white;
     text-align: center;
     margin-top: 0;
@@ -61,11 +63,11 @@ body {
 }
 
 .main {
-    background: #eee;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
+    width: 100%;
 }
 
 .main > h3,
@@ -74,21 +76,72 @@ button {
     margin: 0px 50px;
 }
 
+.main > h3 {
+    width: 700px;
+}
+
 button {
     margin-top: 30px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 1rem;
     font-weight: bold;
-    background: olivedrab;
+    background: #596D48;
     border: none;
     border-radius: 5px;
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 .raised {
     background: #fff;
     padding: 30px 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+input {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+}
 
+input:focus {
+    outline: 2px solid rebeccapurple;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input:invalid {
+    outline: 2px solid red;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #222;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+    margin: 15px auto;
+}
+
+.row > * {
+    flex-grow: 1;
+}
+
+.row input {
+    width: 80%;
+}
+
+#warn {
+    display: none;
+    color: red;
+}
 
